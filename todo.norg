@@ -1,0 +1,13 @@
+@document.meta
+title: todo
+description: 
+authors: viv
+categories: 
+created: 2023-01-08
+updated: 2023-01-08
+version: 1.0.0
+@end
+
+- [ ] Create a GUI For both windows and Linux users
+- [ ] Create a custom api for [JapaneseMoticons]{http://japaneseemoticons.me} As
+  this has the most to offer
