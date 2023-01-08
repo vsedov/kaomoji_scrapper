@@ -11,3 +11,5 @@ version: 1.0.0
 - [ ] Create a GUI For both windows and Linux users
 - [ ] Create a custom api for [JapaneseMoticons]{http://japaneseemoticons.me} As
   this has the most to offer
+- [ ] Remove potential Duplicates /Hmm this is going to be an interesting one to
+figure out./
