@@ -58,9 +58,7 @@ def create_tsv():
     with open(tsv_path, "w") as fp:
         fp.write("category\tkaomoji\tdescription\n")
         for id, (category, els) in enumerate(emoji_dict.items()):
-            i = 0
             for el in els:
                 kao, desc = el
                 desc = desc or ""
-                fp.write(f"{kao}\t{category}_{i}\t{desc}\n")
-                i += 1
+                fp.write(f"{kao}\t{category}\t{desc}\n")
