@@ -1,0 +1,16 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "vsedov", email = "viv.sedov@hotmail.com"},
+]
+dependencies = [
+    "ruff>=0.0.215",
+    "selenium>=4.7.2",
+    "beautifulsoup4>=4.11.1",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
