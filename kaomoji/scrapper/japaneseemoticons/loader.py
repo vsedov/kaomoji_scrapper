@@ -1,13 +1,11 @@
-import asyncio
 import json
-import sys
 import time
 from shutil import which
 
 from bs4 import BeautifulSoup
+from icecream import ic
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -28,18 +26,24 @@ def init_webdriver():
 
     options = Options()
     options.binary = FIREFOX_PATH
-    # options.add_argument("-headless")
+    options.add_argument("-headless")
     return webdriver.Firefox(options=options)
 
 
 class EmojiParser:
     def save_emoji(self, emoji, tag, header):
-        with open(f"{project_path()}/data/kaomoji_{tag}.tsv", "w") as f:
+        print(f"{emoji} -> {tag} -> {header}") if tag != header else print(
+            f"{emoji} -> {header}"
+        )
+
+        with open(
+            f"{project_path()}/data/emoticons/kaomoji_{tag}.tsv", "a"
+        ) as f:
             f.write(f"{emoji}\t{header}\t{tag}\n")
 
 
 class SeleniumUtils:
-    def wait_till_page_ready(self, wait_time=20):
+    def wait_till_page_ready(self, wait_time=5):
         """Wait till the page is ready"""
         try:
             WebDriverWait(self.driver, wait_time).until(
@@ -51,7 +55,7 @@ class SeleniumUtils:
         except Exception as e:
             pass
 
-    def wait_for_element(self, id: str, length=20) -> None:
+    def wait_for_element(self, id: str, length=5) -> None:
         """Wait for element to be visible
         Parameters
         ----------
@@ -81,7 +85,7 @@ class Loader(SeleniumUtils, EmojiParser):
             for i in self.links[link]:
                 yield (link, i)
 
-    def go_to_next_page(self, wait_time=20, next_page_id="next"):
+    def go_to_next_page(self, wait_time=5, next_page_id="next"):
         try:
             self.driver.execute_script(
                 "arguments[0].click();",
@@ -104,39 +108,38 @@ class Loader(SeleniumUtils, EmojiParser):
             return False
 
     def get_emojis(self, tag):
+        headers = tag
         soup = BeautifulSoup(self.driver.page_source, "html.parser")
         for element in soup.find_all(["h2", "table", "h3"]):
             if element.name in ["h2", "h3"]:
-                headers = element.contents[0]
+                headers = element.text
 
             if element.name == "table":
-                format_sets = (False, False)
                 for tr in element.find("tbody").find_all("tr"):
                     td_list = tr.find_all("td")
-                    if len(td_list) == 2 and (not any(format_sets)):
-                        first_td_content = td_list[0].contents[0]
-                        print(first_td_content)
-
+                    if len(td_list) == 2:
+                        for i, td in enumerate(td_list):
+                            self.save_emoji(td.text, tag, headers)
                     else:
-                        for td in td_list:
-                            if data := (td.contents):
-                                self.save_emoji(data[0], tag, headers)
+                        [
+                            self.save_emoji(td.text, tag, headers)
+                            for td in td_list
+                            if td.contents
+                        ]
 
     def init(self):
         for tag, current_link in self.fetch_links():
-            print(current_link)
             self.driver.get(current_link)
             self.wait_till_page_ready()
             self.get_emojis(tag)
             while self.go_to_next_page():
-                self.wait(1)
+                self.wait(1.5)
                 self.get_emojis(tag)
+        ic("Ending (ﾉ´ з `)ノ")
         self.driver.close()
 
 
 if __name__ == "__main__":
     Loader().init()
-
-
 else:
     pass
