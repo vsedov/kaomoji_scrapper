@@ -56,7 +56,6 @@ def create_tsv():
             emoji_dict[name] = get_kaomojis(kaomoji_table)
 
     with open(tsv_path, "w") as fp:
-        fp.write("category\tkaomoji\tdescription\n")
         for id, (category, els) in enumerate(emoji_dict.items()):
             for el in els:
                 kao, desc = el

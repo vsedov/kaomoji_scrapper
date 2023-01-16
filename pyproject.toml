@@ -15,6 +15,10 @@ authors = [
 dependencies = [
     "selenium>=4.7.2",
     "beautifulsoup4>=4.11.1",
+    "pyqt5>=5.15.7",
+    "Xlib>=0.21",
+    "pyautogui>=0.9.53",
+    "PySimpleGUI>=4.60.4",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
