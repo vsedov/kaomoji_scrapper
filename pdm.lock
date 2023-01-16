@@ -1596,7 +1596,7 @@ dependencies = [
 
 [metadata]
 lock_version = "4.1"
-content_hash = "sha256:91d23cd4969307138fd17073a7162c838fbc14e1476cfe8dc6a61389e51f3153"
+content_hash = "sha256:a59e925227570874f91d3b04a4cabbb55b151569740f4da6d2da143c5c1bbe8b"
 
 [metadata.files]
 "asttokens 2.2.1" = [

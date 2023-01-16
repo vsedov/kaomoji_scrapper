@@ -19,6 +19,7 @@ dependencies = [
     "Xlib>=0.21",
     "pyautogui>=0.9.53",
     "PySimpleGUI>=4.60.4",
+    "icecream>=2.1.3",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
