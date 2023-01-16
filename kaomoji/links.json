@@ -1,0 +1,88 @@
+{
+    "emotions_positive": [
+        "https://japaneseemoticons.me/triumph-emoticons-emoticons",
+        "https://japaneseemoticons.me/excited-emoticons",
+        "https://japaneseemoticons.me/love-emoticons",
+        "https://japaneseemoticons.me/happy-emoticons"
+    ],
+    "emotions_neutral": [
+        "https://japaneseemoticons.me/smug-emoticons",
+        "https://japaneseemoticons.me/surprised-emoticons",
+        "https://japaneseemoticons.me/shy-emoticons",
+        "https://japaneseemoticons.me/confused-emoticons",
+        "https://japaneseemoticons.me/crazy-emoticons",
+        "https://japaneseemoticons.me/meh-emoticons"
+    ],
+    "emotions_negative": [
+        "https://japaneseemoticons.me/angry-emoticons",
+        "https://japaneseemoticons.me/scared-emoticons",
+        "https://japaneseemoticons.me/sad-emoticons",
+        "https://japaneseemoticons.me/worried-emoticons",
+        "https://japaneseemoticons.me/hurt-or-sick-emoticons"
+    ],
+    "animals_pets": [
+        "https://japaneseemoticons.me/pig-emoticons",
+        "https://japaneseemoticons.me/rabbit-emoticons",
+        "https://japaneseemoticons.me/sheep-emoticons",
+        "https://japaneseemoticons.me/dog-emoticons",
+        "https://japaneseemoticons.me/bird-emoticons",
+        "https://japaneseemoticons.me/cat-emoticons"
+    ],
+    "animals_wild-animals": [
+        "https://japaneseemoticons.me/bear-emoticons",
+        "https://japaneseemoticons.me/fish-emoticons",
+        "https://japaneseemoticons.me/monkey-emoticons",
+        "https://japaneseemoticons.me/other-animal-emoticons"
+    ],
+    "actions_dancing": [
+        "https://japaneseemoticons.me/hugging-emoticons",
+        "https://japaneseemoticons.me/sleeping-emoticons",
+        "https://japaneseemoticons.me/laughing-emoticons",
+        "https://japaneseemoticons.me/kissing-emoticons",
+        "https://japaneseemoticons.me/dancing-emoticons",
+        "https://japaneseemoticons.me/music-emoticons",
+        "https://japaneseemoticons.me/sport-emoticons"
+    ],
+    "actions_natural": [
+        "https://japaneseemoticons.me/flexing-emoticons",
+        "https://japaneseemoticons.me/writing-emoticons",
+        "https://japaneseemoticons.me/winking-emoticons",
+        "https://japaneseemoticons.me/waving-emoticons",
+        "https://japaneseemoticons.me/running-emoticons",
+        "https://japaneseemoticons.me/thinking-emoticons",
+        "https://japaneseemoticons.me/saluting-emoticons"
+    ],
+    "actions_less-fun": [
+        "https://japaneseemoticons.me/giving-up-emoticons",
+        "https://japaneseemoticons.me/crying-emoticons",
+        "https://japaneseemoticons.me/hiding-emoticons",
+        "https://japaneseemoticons.me/fighting-weapons-emoticons",
+        "https://japaneseemoticons.me/apologizing-emoticons"
+    ],
+    "actions_others": [
+        "https://japaneseemoticons.me/other-action-emoticons",
+        "https://japaneseemoticons.me/table-flipping-emoticons"
+    ],
+    "misc_character-and-meme": [
+        "https://japaneseemoticons.me/holiday-emoticons",
+        "https://japaneseemoticons.me/friend-emoticons",
+        "https://japaneseemoticons.me/cloud-emoticons",
+        "https://japaneseemoticons.me/food-and-drink-emoticons",
+        "https://japaneseemoticons.me/magic-emoticons",
+        "https://japaneseemoticons.me/evil-emoticons",
+        "https://japaneseemoticons.me/dead-emoticons",
+        "https://japaneseemoticons.me/character-and-meme-emoticons"
+    ],
+    "misc_more_misc": [
+        "https://japaneseemoticons.me/nose-bleed-emoticons",
+        "https://japaneseemoticons.me/mustache-emoticons",
+        "https://japaneseemoticons.me/wtf-emoticons",
+        "https://japaneseemoticons.me/random-emoticons"
+    ],
+    "edge_cases_misc": [
+        "https://japaneseemoticons.me/emoticon-objects",
+        "https://japaneseemoticons.me/emoticons-with-words",
+        "https://japaneseemoticons.me/random-emoticons",
+        "https://japaneseemoticons.me/emoticons-with-sunglasses"
+    ]
+}

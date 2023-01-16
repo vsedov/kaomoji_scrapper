@@ -72,7 +72,7 @@ def generate_json_file_of_links():
 
     for key, value in TAGS.items():
         for subkey, subvalue in value.items():
-            links[f"{key}/{subkey}"].extend(
+            links[f"{key}_{subkey}"].extend(
                 [
                     core_link
                     + (tag + "-emoticons" if key != "edge_cases" else tag)
@@ -89,3 +89,18 @@ if __name__ == "__main__":
     generate_json_file_of_links()
 else:
     pass
+
+if __name__ == "__main__":
+    Loader().init()
+
+
+else:
+    pass
+
+#  TODO: (vsedov) (08:45:37 - 16/01/23):@ Use asyncio and to go through eage
+#  page to be faster: for now this is very linear.
+
+
+# Sheep emojis, are weird.
+
+

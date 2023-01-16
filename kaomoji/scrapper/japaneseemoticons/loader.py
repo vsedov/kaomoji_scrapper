@@ -1,3 +1,4 @@
+import asyncio
 import json
 import sys
 import time
@@ -10,6 +11,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+
+from kaomoji.utils import project_path
 
 FIREFOX_PATH = which("firefox-nightly")
 
@@ -31,7 +34,7 @@ def init_webdriver():
 
 class EmojiParser:
     def save_emoji(self, emoji, tag, header):
-        with open(f"kaomoji_{tag.replace('/','_')}.tsv", "a") as f:
+        with open(f"{project_path()}/data/kaomoji_{tag}.tsv", "w") as f:
             f.write(f"{emoji}\t{header}\t{tag}\n")
 
 
@@ -133,11 +136,7 @@ class Loader(SeleniumUtils, EmojiParser):
 
 if __name__ == "__main__":
     Loader().init()
+
+
 else:
     pass
-
-#  TODO: (vsedov) (08:45:37 - 16/01/23):@ Use asyncio and to go through eage
-#  page to be faster: for now this is very linear.
-
-
-# Sheep emojis, are weird.

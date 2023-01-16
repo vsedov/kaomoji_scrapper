@@ -61,3 +61,4 @@ def create_tsv():
                 kao, desc = el
                 desc = desc or ""
                 fp.write(f"{kao}\t{category}\t{desc}\n")
+

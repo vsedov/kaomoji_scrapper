@@ -1,88 +1,104 @@
 {
-    "emotions/positive": [
-        "https://japaneseemoticons.me/love-emoticons",
+    "emotions_positive": [
         "https://japaneseemoticons.me/happy-emoticons",
+        "https://japaneseemoticons.me/love-emoticons",
         "https://japaneseemoticons.me/triumph-emoticons-emoticons",
         "https://japaneseemoticons.me/excited-emoticons"
     ],
-    "emotions/neutral": [
-        "https://japaneseemoticons.me/meh-emoticons",
-        "https://japaneseemoticons.me/crazy-emoticons",
+    "emotions_neutral": [
         "https://japaneseemoticons.me/shy-emoticons",
+        "https://japaneseemoticons.me/meh-emoticons",
         "https://japaneseemoticons.me/surprised-emoticons",
+        "https://japaneseemoticons.me/confused-emoticons",
         "https://japaneseemoticons.me/smug-emoticons",
-        "https://japaneseemoticons.me/confused-emoticons"
+        "https://japaneseemoticons.me/crazy-emoticons"
     ],
-    "emotions/negative": [
-        "https://japaneseemoticons.me/sad-emoticons",
+    "emotions_negative": [
         "https://japaneseemoticons.me/worried-emoticons",
         "https://japaneseemoticons.me/angry-emoticons",
+        "https://japaneseemoticons.me/sad-emoticons",
         "https://japaneseemoticons.me/hurt-or-sick-emoticons",
         "https://japaneseemoticons.me/scared-emoticons"
     ],
-    "animals/pets": [
-        "https://japaneseemoticons.me/dog-emoticons",
+    "animals_pets": [
         "https://japaneseemoticons.me/sheep-emoticons",
-        "https://japaneseemoticons.me/bird-emoticons",
+        "https://japaneseemoticons.me/cat-emoticons",
         "https://japaneseemoticons.me/rabbit-emoticons",
-        "https://japaneseemoticons.me/pig-emoticons",
-        "https://japaneseemoticons.me/cat-emoticons"
+        "https://japaneseemoticons.me/dog-emoticons",
+        "https://japaneseemoticons.me/bird-emoticons",
+        "https://japaneseemoticons.me/pig-emoticons"
     ],
-    "animals/wild-animals": [
+    "animals_wild-animals": [
         "https://japaneseemoticons.me/bear-emoticons",
-        "https://japaneseemoticons.me/monkey-emoticons",
         "https://japaneseemoticons.me/fish-emoticons",
-        "https://japaneseemoticons.me/other-animal-emoticons"
+        "https://japaneseemoticons.me/other-animal-emoticons",
+        "https://japaneseemoticons.me/monkey-emoticons"
     ],
-    "actions/dancing": [
-        "https://japaneseemoticons.me/hugging-emoticons",
-        "https://japaneseemoticons.me/sleeping-emoticons",
+    "actions_dancing": [
+        "https://japaneseemoticons.me/music-emoticons",
         "https://japaneseemoticons.me/dancing-emoticons",
         "https://japaneseemoticons.me/sport-emoticons",
         "https://japaneseemoticons.me/laughing-emoticons",
         "https://japaneseemoticons.me/kissing-emoticons",
-        "https://japaneseemoticons.me/music-emoticons"
+        "https://japaneseemoticons.me/sleeping-emoticons",
+        "https://japaneseemoticons.me/hugging-emoticons"
     ],
-    "actions/natural": [
-        "https://japaneseemoticons.me/writing-emoticons",
-        "https://japaneseemoticons.me/waving-emoticons",
-        "https://japaneseemoticons.me/winking-emoticons",
-        "https://japaneseemoticons.me/flexing-emoticons",
+    "actions_natural": [
         "https://japaneseemoticons.me/running-emoticons",
-        "https://japaneseemoticons.me/thinking-emoticons",
-        "https://japaneseemoticons.me/saluting-emoticons"
+        "https://japaneseemoticons.me/flexing-emoticons",
+        "https://japaneseemoticons.me/saluting-emoticons",
+        "https://japaneseemoticons.me/writing-emoticons",
+        "https://japaneseemoticons.me/winking-emoticons",
+        "https://japaneseemoticons.me/waving-emoticons",
+        "https://japaneseemoticons.me/thinking-emoticons"
     ],
-    "actions/less-fun": [
-        "https://japaneseemoticons.me/hiding-emoticons",
-        "https://japaneseemoticons.me/apologizing-emoticons",
-        "https://japaneseemoticons.me/crying-emoticons",
+    "actions_less-fun": [
+        "https://japaneseemoticons.me/fighting-weapons-emoticons",
         "https://japaneseemoticons.me/giving-up-emoticons",
-        "https://japaneseemoticons.me/fighting-weapons-emoticons"
+        "https://japaneseemoticons.me/apologizing-emoticons",
+        "https://japaneseemoticons.me/hiding-emoticons",
+        "https://japaneseemoticons.me/crying-emoticons"
     ],
-    "actions/others": [
+    "actions_others": [
         "https://japaneseemoticons.me/table-flipping-emoticons",
         "https://japaneseemoticons.me/other-action-emoticons"
     ],
-    "misc/character-and-meme": [
-        "https://japaneseemoticons.me/dead-emoticons",
+    "misc_character-and-meme": [
         "https://japaneseemoticons.me/food-and-drink-emoticons",
-        "https://japaneseemoticons.me/cloud-emoticons",
-        "https://japaneseemoticons.me/character-and-meme-emoticons",
-        "https://japaneseemoticons.me/holiday-emoticons",
         "https://japaneseemoticons.me/friend-emoticons",
+        "https://japaneseemoticons.me/character-and-meme-emoticons",
+        "https://japaneseemoticons.me/magic-emoticons",
         "https://japaneseemoticons.me/evil-emoticons",
-        "https://japaneseemoticons.me/magic-emoticons"
+        "https://japaneseemoticons.me/cloud-emoticons",
+        "https://japaneseemoticons.me/dead-emoticons",
+        "https://japaneseemoticons.me/holiday-emoticons"
     ],
-    "misc/more_misc": [
-        "https://japaneseemoticons.me/random-emoticons",
+    "misc_more_misc": [
         "https://japaneseemoticons.me/wtf-emoticons",
+        "https://japaneseemoticons.me/random-emoticons",
         "https://japaneseemoticons.me/mustache-emoticons",
         "https://japaneseemoticons.me/nose-bleed-emoticons"
     ],
-    "edge_cases/misc": [
-        "https://japaneseemoticons.me/emoticons-with-sunglasses",
-        "https://japaneseemoticons.me/emoticon-objects",
+    "edge_cases_misc": [
         "https://japaneseemoticons.me/random-emoticons",
-        "https://japaneseemoticons.me/emoticons-with-words"
+        "https://japaneseemoticons.me/emoticons-with-words",
+        "https://japaneseemoticons.me/emoticon-objects",
+        "https://japaneseemoticons.me/emoticons-with-sunglasses"
     ]
 }
+
+if __name__ == "__main__":
+    Loader().init()
+
+
+else:
+    pass
+
+#  TODO: (vsedov) (08:45:37 - 16/01/23):@ Use asyncio and to go through eage
+#  page to be faster: for now this is very linear.
+
+
+# Sheep emojis, are weird.
+
+
+
