@@ -74,8 +74,10 @@ def generate_json_file_of_links():
         for subkey, subvalue in value.items():
             links[f"{key}_{subkey}"].extend(
                 [
-                    core_link
-                    + (tag + "-emoticons" if key != "edge_cases" else tag)
+                    (
+                        core_link
+                        + (f"{tag}-emoticons" if key != "edge_cases" else tag)
+                    )
                     for tag in subvalue
                 ]
             )
@@ -87,5 +89,3 @@ def generate_json_file_of_links():
 
 if __name__ == "__main__":
     generate_json_file_of_links()
-else:
-    pass

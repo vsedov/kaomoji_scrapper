@@ -103,10 +103,7 @@ class Window(QWidget, MainWindow):
     global willExitOnItsOwn
 
     def eventFilter(self, object, event):
-        if (
-            event.type() == QEvent.WindowDeactivate
-            or event.type() == QEvent.FocusOut
-        ):
+        if event.type() in [QEvent.WindowDeactivate, QEvent.FocusOut]:
             if not willExitOnItsOwn:
                 self.quitNicely()
         return False

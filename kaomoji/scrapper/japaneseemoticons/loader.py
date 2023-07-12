@@ -100,10 +100,7 @@ class Loader(SeleniumUtils, EmojiParser):
                     )
                 ),
             )
-            if driver.text == next_page_id:
-                return True
-            return False
-
+            return driver.text == next_page_id
         except Exception as e:
             return False
 
@@ -118,7 +115,7 @@ class Loader(SeleniumUtils, EmojiParser):
                 for tr in element.find("tbody").find_all("tr"):
                     td_list = tr.find_all("td")
                     if len(td_list) == 2:
-                        for i, td in enumerate(td_list):
+                        for td in td_list:
                             self.save_emoji(td.text, tag, headers)
                     else:
                         [
@@ -141,5 +138,3 @@ class Loader(SeleniumUtils, EmojiParser):
 
 if __name__ == "__main__":
     Loader().init()
-else:
-    pass
